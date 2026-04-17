@@ -72,6 +72,7 @@ export class AboutComponent implements OnInit {
           return EMPTY
         })
       ).subscribe((config) => {
+        console.log("heyyyyy")
         if (config?.application?.social) {
           if (config.application.social.blueSkyUrl) {
             this.blueSkyUrl = config.application.social.blueSkyUrl
